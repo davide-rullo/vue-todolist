@@ -19,6 +19,16 @@ createApp({
                 }
             ]
         };
+    }, 
+    
+    methods: {
+
+        removeTask(index){
+           console.log("click" + index); 
+           console.log(this.todos[index].text)
+           this.todos.splice(index, 1);
+        }
+
     }
 
 
