@@ -19,29 +19,30 @@ createApp({
                 }
             ]
         };
-    }, 
-    
+    },
+
     methods: {
 
-        addTask(){
-            
+        addTask() {
+
             if (this.newTask != "") {
-                let newTaskObj =  {
+                let newTaskObj = {
                     text: this.newTask,
                     done: false
                 };
 
-                
+
 
                 this.todos.push(newTaskObj);
-                
+
             }
         },
 
-        removeTask(index){
-           console.log("click" + index); 
-           console.log(this.todos[index].text)
-           this.todos.splice(index, 1);
+
+        removeTask(index) {
+            console.log("click" + index);
+            console.log(this.todos[index].text)
+            this.todos.splice(index, 1);
         }
 
     }
