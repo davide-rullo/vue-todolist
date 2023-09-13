@@ -23,6 +23,12 @@ createApp({
     
     methods: {
 
+        addTask(){
+            if (this.newTask != "") {
+             this.todos.push(this.newTask)   
+            }
+        },
+
         removeTask(index){
            console.log("click" + index); 
            console.log(this.todos[index].text)

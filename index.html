@@ -12,6 +12,9 @@
         <div id="app" class="container">
             <div class="new-task">
 
+                <input v-model="newTask" type="text"/>
+                <button @click="addTask()">Aggiungi task</button>
+
             </div>
             <div class="tasks">
                 <ul>
