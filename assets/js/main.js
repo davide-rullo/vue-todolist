@@ -48,7 +48,20 @@ createApp({
         taskUndone(index){
             // this.todos[index].done=false;
             console.log("click" + this.todos[index]);
-            this.todos[index].done=false;
+            if (this.todos[index].done === true) {
+                this.todos[index].done=false;
+            } else{
+                this.todos[index].done=true;
+            }
+            
+        },
+
+        taskDone(index){
+            if (this.todos[index].done === false) {
+                this.todos[index].done=true;
+            } else{
+                this.todos[index].done=false;
+            }
         }
 
     }
