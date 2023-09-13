@@ -26,10 +26,10 @@
 
                         <!-- se la task è completa il testo sarà sbarrato -->
                         <li v-if="todo.done">
-                            <s>{{todo.text}}</s> <i @click="removeTask(index)"
+                            <s @click="taskUndone(index)">{{todo.text}}</s> <i @click="removeTask(index)"
                                 class="fa-solid fa-x"></i></li>
 
-                        <li v-else>{{todo.text}}<i @click="removeTask(index)"
+                        <li v-else><span @click="taskDone(index)">{{todo.text}}</span><i @click="removeTask(index)"
                                 class="fa-solid fa-x"></i></li>
 
                     </template>
