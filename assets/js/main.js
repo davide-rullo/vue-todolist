@@ -25,7 +25,7 @@ createApp({
 
         addTask() {
 
-            if (this.newTask != "") {
+            if (this.newTask.text != "") {
                 let newTaskObj = {
                     text: this.newTask,
                     done: false
