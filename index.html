@@ -8,6 +8,19 @@
 </head>
 <body>
     
+    <div id="app" class="container">
+        <div class="new-task">
+
+        </div>
+        <div class="tasks">
+            <ul>
+                <li v-for="todo in todos">
+                    {{todo.text}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="./assets/js/main.js"></script>
 </body>
