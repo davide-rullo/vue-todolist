@@ -4,7 +4,7 @@ createApp({
         return {
             todos: [
                 {
-                    text: "",
+                    text: "Fare lavatrice",
                     done: false
                 },
 
@@ -24,8 +24,17 @@ createApp({
     methods: {
 
         addTask(){
+            
             if (this.newTask != "") {
-             this.todos.push(this.newTask)   
+                let newTaskObj =  {
+                    text: this.newTask,
+                    done: false
+                };
+
+                
+
+                this.todos.push(newTaskObj);
+                
             }
         },
 
