@@ -15,7 +15,7 @@ createApp({
 
                 {
                     text: "Chiamare Roberto",
-                    done: false
+                    done: true
                 }
             ]
         };
