@@ -1,0 +1,26 @@
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    background-color: rgba(0, 255, 21, 0.24);
+}
+
+.wrapper{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+i{
+    cursor: pointer;
+    text-align: center;
+}
+
+.basket{
+    width: 25px;
+    aspect-ratio: 1/1;
+    border: 1px solid;
+}
